@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Birthday Indhudevi! 🎉</title>
+  <style>
+    :root {
+      --primary: #a678de; /* Purple theme */
+      --secondary: #f3e8ff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--primary);
+      color: #2c2c2c;
+      text-align: center;
+    }
+
+    header {
+      padding: 2rem;
+      background: var(--secondary);
+      border-bottom: 4px solid var(--primary);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    #countdown {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+      background: #fff;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .wish-card {
+      background: var(--secondary);
+      padding: 1rem;
+      margin: 1rem auto;
+      border-radius: 1rem;
+      width: 80%;
+      max-width: 500px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      padding: 1rem;
+      font-size: 0.9rem;
+      background: #eee;
+    }
+  </style>
+</head>
+<body>
+  <audio id="bg-music" autoplay loop>
+    <source src="https://example.com/bts-song.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <header>
+    <h1>Happy Birthday, Indhudevi S.A.! 🎂</h1>
+    <p>The only girl who roasts with elegance and thinks like a mini Einstein 😄</p>
+    <div id="countdown"></div>
+  </header>
+
+  <section class="gallery">
+    <!-- Replace the links below with your real image links -->
+    <img src="https://via.placeholder.com/150" alt="Photo 1" />
+    <img src="https://via.placeholder.com/150" alt="Photo 2" />
+    <img src="https://via.placeholder.com/150" alt="Photo 3" />
+  </section>
+
+  <section id="wishes">
+    <div class="wish-card">
+      <strong>Santhiya says:</strong>
+      <p>You're the only person who can make us laugh and overthink at the same time. Happy Birthday! 💜</p>
+    </div>
+    <div class="wish-card">
+      <strong>Indhu says:</strong>
+      <p>Your humor is dark, but your heart's gold. Have an amazing year ahead!</p>
+    </div>
+  </section>
+
+  <footer>
+    Made with 💜 by friends who survive your sarcasm daily.
+  </footer>
+
+  <script>
+    // Countdown Timer
+    const targetDate = new Date("2025-06-01T00:00:00");
+    const cdEl = document.getElementById("countdown");
+
+    function updateCountdown() {
+      const now = new Date();
+      const diff = targetDate - now;
+
+      if (diff <= 0) {
+        cdEl.textContent = "🎉 It's your birthday today! 🎉";
+        clearInterval(timer);
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hrs = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const mins = Math.floor((diff / (1000 * 60)) % 60);
+      const secs = Math.floor((diff / 1000) % 60);
+
+      cdEl.textContent = `${days}d ${hrs}h ${mins}m ${secs}s left 🎈`;
+    }
+
+    const timer = setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // Ensure music plays on click (some browsers block autoplay)
+    window.addEventListener("click", () => {
+      const audio = document.getElementById("bg-music");
+      if (audio.paused) audio.play();
+    });
+  </script>
+</body>
+</html>
