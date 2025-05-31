@@ -1,27 +1,67 @@
-<section id="about-her" style="background: #ffe6f2; padding: 2em; border-radius: 20px;">
-  <h2>👑 Meet the Birthday Queen: <span style="color:#ff69b4;">Indhudevi</span> 👑</h2>
-  <ul>
-    <li><strong>Full Name:</strong> Indhudevi</li>
-    <li><strong>Nickname:</strong> Pei (the lovable little devil 😈)</li>
-    <li><strong>Birthday:</strong> [Your Birthday Here]</li>
-    <li><strong>Zodiac Sign:</strong> [Her Zodiac Sign]</li>
-    <li><strong>Favorite Curse Word:</strong> <span style="color:#d7263d;">[Her Favorite Curse Word]</span></li>
-    <li><strong>Hobbies:</strong> [Her Hobbies]</li>
-    <li><strong>Famous Quote:</strong> “<em>[Her Quote]</em>”</li>
-  </ul>
-  <h3>🏆 Fun Facts About Pei</h3>
-  <ul>
-    <li>Can’t go a day without saying: “[Her phrase]”</li>
-    <li>Known for: Making everyone laugh with her dirty jokes and wild sense of humor</li>
-    <li>Secret talent: [Her secret talent]</li>
-    <li>Best party trick: [Her party trick]</li>
-    <li>Most likely to: Start a roast battle and win it</li>
-  </ul>
-  <div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Pei (Indhudevi)!</title>
+  <style>
+    body { 
+      font-family: 'Segoe UI', Arial, sans-serif; 
+      background: #ffe6f2; 
+      color: #222; 
+      margin: 0; 
+      padding: 0;
+    }
+    .container { 
+      max-width: 800px; 
+      margin: 40px auto; 
+      background: #fff; 
+      border-radius: 20px; 
+      box-shadow: 0 4px 16px #f9c6d3; 
+      padding: 40px; 
+    }
+    h1, h2, h3 { color: #ff69b4; }
+    img { border-radius: 12px; margin: 10px; }
+    .movie-section, .music-section { background: #fff0f6; padding: 1em; border-radius: 15px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎉 Happy Birthday, Pei! 🎉</h1>
+    <h2>👑 Meet the Birthday Queen: Indhudevi 👑</h2>
+    <ul>
+      <li><strong>Full Name:</strong> Indhudevi</li>
+      <li><strong>Nickname:</strong> Pei (the lovable little devil 😈)</li>
+      <li><strong>Birthday:</strong> [Your Birthday Here]</li>
+      <li><strong>Zodiac Sign:</strong> [Her Zodiac Sign]</li>
+      <li><strong>Favorite Curse Word:</strong> [Her Favorite Curse Word]</li>
+      <li><strong>Hobbies:</strong> Movie marathons, meme-making, pranking friends</li>
+      <li><strong>Famous Quote:</strong> “Life’s too short to be boring!”</li>
+    </ul>
+
+    <h3>🏆 Fun Facts About Pei</h3>
+    <ul>
+      <li>Can’t go a day without saying: "[Her phrase]"</li>
+      <li>Known for: Making everyone laugh with her dirty jokes and wild sense of humor</li>
+      <li>Movie Buff Alert: Can quote entire scenes from <em>Fight Club</em> and cry during <em>The Pursuit of Happyness</em></li>
+      <li>Secret talent: [Her secret talent]</li>
+      <li>Best party trick: [Her party trick]</li>
+      <li>Most likely to: Start a roast battle and win it</li>
+    </ul>
+
+    <div class="movie-section">
+      <h3>🎬 Movie & Music Vibes 🎶</h3>
+      <p><strong>Favorite Movies:</strong> <em>Fight Club, The Pursuit of Happyness</em>, and many more English classics</p>
+      <p><strong>Favorite Song:</strong> “Give Me Sunshine” from <em>3 Idiots</em></p>
+      <!-- You can embed the song from YouTube if you like -->
+      <iframe width="300" height="170" src="https://www.youtube.com/embed/3bH1gQh1b1s" title="Give Me Some Sunshine - 3 Idiots" frameborder="0" allowfullscreen></iframe>
+    </div>
+
     <h3>💖 Photo Collage</h3>
-    <!-- Place her photos here -->
-    <img src="indhudevi1.jpg" alt="Queen of Sass" width="120" style="margin:5px;">
-    <img src="indhudevi2.jpg" alt="Too cute to be this naughty" width="120" style="margin:5px;">
-    <!-- Add more photos as needed -->
+    <img src="photos/indhudevi1.jpg" alt="Queen of Sass" width="120">
+    <img src="photos/indhudevi2.jpg" alt="Too cute to be this naughty" width="120">
+    <!-- Add more images as needed -->
+
+    <p style="margin-top: 40px;">Made with 💖 by your friends!</p>
   </div>
-</section>
+</body>
+</html>
